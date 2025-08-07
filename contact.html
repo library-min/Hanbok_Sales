@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고운 우리 옷, 한복점 - 맞춤 문의</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">고운</a>
+            <ul>
+                <li><a href="about.html">우리의 이야기</a></li>
+                <li><a href="gallery.html">상품 보기</a></li>
+                <li><a href="story.html">장인의 손길</a></li>
+                <li><a href="contact.html">맞춤 문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container animate-on-scroll">
+                <h2>맞춤 제작 문의</h2>
+                <form>
+                    <input type="text" placeholder="성함">
+                    <input type="email" placeholder="연락처">
+                    <select name="hanbok-collection" id="hanbok-collection">
+                        <option value="">-- 한복 컬렉션 선택 --</option>
+                        <option value="daily">데일리 생활 한복</option>
+                        <option value="holiday">명절 맞이 한복</option>
+                        <option value="wedding">혼주 및 예복 한복</option>
+                        <option value="custom">맞춤 한복</option>
+                    </select>
+                    <textarea placeholder="문의하실 내용을 남겨주세요"></textarea>
+                    <button type="submit">문의 접수</button>
+                </form>
+                <div id="confirmation-message" style="display: none; margin-top: 20px; padding: 15px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 5px; text-align: center;">
+                    문의가 성공적으로 접수되었습니다. 감사합니다!
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 고운 한복점. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
