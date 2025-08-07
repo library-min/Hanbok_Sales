@@ -81,7 +81,7 @@ main {
 }
 
 #hero {
-    background: url('https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-176c-620a-8e9d-d972e6974e51/raw?se=2025-08-07T14%3A28%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=c32f1497-3ebc-57dd-9079-d6337c239caf&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-06T18%3A48%3A02Z&ske=2025-08-07T18%3A48%3A02Z&sks=b&skv=2024-08-04&sig=ZXyRrsPouK2ZAza7D/nrCmPY1MNLfzI2q/%2BZfkLYuM4%3D') no-repeat center center/cover;
+    background: url('고운.png') no-repeat top center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@ main {
 }
 
 .hero-content {
-    background: rgba(40, 30, 20, 0.5); /* 불투명도 살짝 낮춤 */
+    background: rgba(40, 30, 20, 0.8); /* 불투명도 살짝 높임 */
     padding: 2.5rem 5rem; /* 패딩 증가 */
     border-radius: 3px; /* 모서리 둥글기 살짝 줄임 */
     border: 1px solid rgba(255, 255, 255, 0.3); /* 은은한 흰색 테두리 추가 */
@@ -146,7 +146,7 @@ section h2 {
 
 /* About Page Specific Styles */
 #about-hero {
-    background: url('https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-176c-620a-8e9d-d972e6974e51/raw?se=2025-08-07T14%3A28%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=c32f1497-3ebc-57dd-9079-d6337c239caf&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-06T18%3A48%3A02Z&ske=2025-08-07T18%3A48%3A02Z&sks=b&skv=2024-08-04&sig=ZXyRrsPouK2ZAza7D/nrCmPY1MNLfzI2q/%2BZfkLYuM4%3D') no-repeat center center/cover; /* 메인 페이지와 동일한 배경 사용 */
+    background: url('고운.png') no-repeat top center/cover;
     height: 60vh; /* 메인 페이지보다 살짝 작게 */
     display: flex;
     align-items: center;
@@ -323,7 +323,7 @@ section h2 {
 
 /* Gallery Page Specific Styles */
 #gallery-hero {
-    background: url('https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-176c-620a-8e9d-d972e6974e51/raw?se=2025-08-07T14%3A28%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=c32f1497-3ebc-57dd-9079-d6337c239caf&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-06T18%3A48%3A02Z&ske=2025-08-07T18%3A48%3A02Z&sks=b&skv=2024-08-04&sig=ZXyRrsPouK2ZAza7D/nrCmPY1MNLfzI2q/%2BZfkLYuM4%3D') no-repeat center center/cover; /* 메인 페이지와 동일한 배경 사용 */
+    background: url('고운.png') no-repeat top center/cover;
     height: 60vh; /* 메인 페이지보다 살짝 작게 */
     display: flex;
     align-items: center;
@@ -368,7 +368,7 @@ section h2 {
 
 /* Story Page Specific Styles */
 #story-hero {
-    background: url('https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-176c-620a-8e9d-d972e6974e51/raw?se=2025-08-07T14%3A28%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=c32f1497-3ebc-57dd-9079-d6337c239caf&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-06T18%3A48%3A02Z&ske=2025-08-07T18%3A48%3A02Z&sks=b&skv=2024-08-04&sig=ZXyRrsPouK2ZAza7D/nrCmPY1MNLfzI2q/%2BZfkLYuM4%3D') no-repeat center center/cover; /* 메인 페이지와 동일한 배경 사용 */
+    background: url('고운.png') no-repeat top center/cover; /* 메인 페이지와 동일한 배경 사용 */
     height: 60vh;
     display: flex;
     align-items: center;
@@ -471,6 +471,45 @@ section h2 {
 }
 
 /* 문의하기 섹션 */
+#contact-hero {
+    background: url('고운.png') no-repeat top center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    animation: backgroundZoom 20s infinite alternate;
+}
+
+#contact-hero .hero-content {
+    background: rgba(40, 30, 20, 0.6);
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#contact-hero p {
+    font-size: 1.2rem;
+    max-width: none;
+}
+
+@media (max-width: 768px) {
+    #contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    #contact-hero p {
+        font-size: 1rem;
+    }
+}
+
 #contact form {
     max-width: 600px;
     margin: 0 auto;
