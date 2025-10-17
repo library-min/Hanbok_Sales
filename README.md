@@ -1,6 +1,5 @@
 # 한복 판매 사이트 (Hanbok Sales)
 
-📸 화면 미리보기 (Screenshots)
 | 메인 페이지 |
 ![alt text](images/Home.png)
 
