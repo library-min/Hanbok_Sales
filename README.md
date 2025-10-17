@@ -2,8 +2,7 @@
 
 📸 화면 미리보기 (Screenshots)
 | 메인 페이지 |
-|---|
-| ![메인 페이지 스크린샷](https://via.placeholder.com/600x400?text=Main+Page+Screenshot) |
+![alt text](images/Home.png)
 
 ✨ 주요 기능 (현재 구현된 '프론트엔드 뷰' 중심)
 
