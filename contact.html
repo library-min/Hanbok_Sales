@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고운 우리 옷, 한복점 - 맞춤 문의</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -14,11 +14,17 @@
     <header>
         <nav class="container">
             <a href="index.html" class="logo">고운</a>
-            <ul>
+            <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="about.html">우리의 이야기</a></li>
                 <li><a href="gallery.html">상품 보기</a></li>
                 <li><a href="story.html">장인의 손길</a></li>
                 <li><a href="contact.html">맞춤 문의</a></li>
+                <li><a href="cart.html" class="cart-link">장바구니<span class="cart-count">0</span></a></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +65,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -81,24 +81,13 @@ main {
 }
 
 #hero {
-    background: url('고운.png') no-repeat top center/cover;
-    height: 100vh;
+    background: url('../images/Back.jpeg') no-repeat top center/cover;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    /* 배경 이미지 애니메이션 추가 */
-    animation: backgroundZoom 20s infinite alternate;
-}
-
-@keyframes backgroundZoom {
-    0% {
-        background-size: 100% 100%;
-    }
-    100% {
-        background-size: 110% 110%;
-    }
 }
 
 .hero-content {
@@ -146,14 +135,13 @@ section h2 {
 
 /* About Page Specific Styles */
 #about-hero {
-    background: url('고운.png') no-repeat top center/cover;
+    background: url('../images/Back.jpeg') no-repeat top center/cover;
     height: 60vh; /* 메인 페이지보다 살짝 작게 */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    animation: backgroundZoom 20s infinite alternate;
 }
 
 #about-hero .hero-content {
@@ -323,14 +311,13 @@ section h2 {
 
 /* Gallery Page Specific Styles */
 #gallery-hero {
-    background: url('고운.png') no-repeat top center/cover;
+    background: url('../images/Back.jpeg') no-repeat top center/cover;
     height: 60vh; /* 메인 페이지보다 살짝 작게 */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    animation: backgroundZoom 20s infinite alternate;
 }
 
 #gallery-hero .hero-content {
@@ -368,14 +355,13 @@ section h2 {
 
 /* Story Page Specific Styles */
 #story-hero {
-    background: url('고운.png') no-repeat top center/cover; /* 메인 페이지와 동일한 배경 사용 */
+    background: url('../images/Back.jpeg') no-repeat top center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    animation: backgroundZoom 20s infinite alternate;
 }
 
 #story-hero .hero-content {
@@ -438,6 +424,14 @@ section h2 {
     line-height: 1.5;
 }
 
+.material-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 768px) {
     #story-hero h1 {
         font-size: 2.2rem;
@@ -472,14 +466,13 @@ section h2 {
 
 /* 문의하기 섹션 */
 #contact-hero {
-    background: url('고운.png') no-repeat top center/cover;
+    background: url('../images/Back.jpeg') no-repeat top center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
-    animation: backgroundZoom 20s infinite alternate;
 }
 
 #contact-hero .hero-content {
@@ -650,9 +643,524 @@ footer {
         left: 0px; /* Further adjusted for better alignment */
         right: auto;
     }
-
-    #materials .material-grid {
-        grid-template-columns: 1fr; /* Single column for materials */
-    }
 }
 
+
+/* 갤러리 필터 */
+.filter-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-container select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #d4c0a9;
+    border-radius: 5px;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/* 상품 상세 페이지 */
+#product-detail .container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    flex: 1 1 400px;
+}
+
+.product-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-info {
+    flex: 1 1 400px;
+}
+
+.product-info h1 {
+    font-size: 2.5rem;
+    font-family: 'Gowun Batang', serif;
+    margin-top: 0;
+}
+
+.product-info .price {
+    font-size: 1.8rem;
+    color: #4a3f35;
+    margin-bottom: 1.5rem;
+}
+
+.product-info .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.size-selection, .quantity-selection {
+    margin-bottom: 1.5rem;
+}
+
+.size-selection label, .quantity-selection label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.size-selection select, .quantity-selection input {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #d4c0a9;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #4a3f35;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Gowun Batang', serif;
+    text-align: center;
+}
+
+.add-to-cart-btn:hover {
+    background: #6e5f53;
+}
+
+.product-tabs {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #d4c0a9;
+}
+
+.tab-button {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: 'Gowun Batang', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #6e5f53;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-button.active {
+    color: #4a3f35;
+    border-bottom-color: #4a3f35;
+}
+
+.tab-content {
+    padding: 2rem 0;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+a.gallery-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-item {
+    height: 100%;
+}
+
+
+/* 장바구니 페이지 */
+#cart .cart-container {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eaddc7;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.cart-item-info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6e5f53;
+}
+
+.cart-item-quantity input {
+    width: 40px; /* Adjust width for better fit with buttons */
+    text-align: center;
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.cart-item-quantity input::-webkit-outer-spin-button,
+.cart-item-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cart-item-total {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 120px;
+    text-align: right;
+}
+
+.cart-item-remove button {
+    background: none;
+    border: none;
+    color: #9c3c3c;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cart-summary {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f8f4ef;
+    border-radius: 8px;
+    text-align: right;
+}
+
+.cart-summary h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.cart-summary .total {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a3f35;
+}
+
+.cart-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4a3f35;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #6e5f53;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #4a3f35;
+    border: 1px solid #4a3f35;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f4ef;
+}
+
+/* Product Detail Color Swatches */
+.color-selection {
+    margin-bottom: 1.5rem;
+}
+
+.color-selection label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.color-swatch-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #d4c0a9;
+    transition: border-color 0.3s ease;
+}
+
+.color-swatch:hover {
+    border-color: #4a3f35;
+}
+
+.color-swatch.active {
+    border-color: #4a3f35;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cart Count Badge */
+.cart-link {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #9c3c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1;
+    display: none; /* Initially hidden */
+}
+
+/* Checkout Page */
+.checkout-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.checkout-form-container {
+    flex: 2 1 500px;
+}
+
+.order-summary-container {
+    flex: 1 1 300px;
+    background-color: #f8f4ef;
+    padding: 2rem;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.checkout-form-container h3,
+.order-summary-container h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #eaddc7;
+    padding-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #d4c0a9;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Gowun Batang', serif;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-check input {
+    width: auto;
+}
+
+#order-summary-items .summary-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eaddc7;
+}
+
+#order-summary-items .summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item-img {
+    width: 60px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.summary-item-info {
+    flex-grow: 1;
+}
+
+.summary-item-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.summary-item-info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #6e5f53;
+}
+
+.summary-item-price {
+    font-weight: 700;
+}
+
+#order-summary-total {
+    padding-top: 1rem;
+    border-top: 1px solid #d4c0a9;
+}
+
+#order-summary-total p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+#order-summary-total .total {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+#checkout-confirmation {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f8f4ef;
+    border-radius: 8px;
+}
+
+/* Reviews and Q&A Section */
+.review-form {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eaddc7;
+}
+
+.review-form h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.review-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.review-form button {
+    padding: 0.8rem 1.5rem;
+    background: #4a3f35;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Gowun Batang', serif;
+}
+
+.review-form button:hover {
+    background: #6e5f53;
+}
+
+.review-list, .qa-list {
+    margin-bottom: 2rem;
+}
+
+.review-item, .qa-item {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eaddc7;
+}
+
+.review-item:last-child, .qa-item:last-child {
+    border-bottom: none;
+}
+
+.review-author, .qa-author {
+    margin: 0 0 0.5rem 0;
+}
+
+/* Cart Quantity Buttons */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-item-quantity input {
+    width: 40px; /* Adjust width for better fit with buttons */
+    text-align: center;
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.cart-item-quantity input::-webkit-outer-spin-button,
+.cart-item-quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-btn {
+    background-color: #d4c0a9;
+    color: #4a3f35;
+    border: 1px solid #d4c0a9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #c0a890;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제하기 - 고운 우리 옷, 한복점</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">고운</a>
+            <ul>
+                <li><a href="about.html">우리의 이야기</a></li>
+                <li><a href="gallery.html">상품 보기</a></li>
+                <li><a href="story.html">장인의 손길</a></li>
+                <li><a href="contact.html">맞춤 문의</a></li>
+                <li><a href="cart.html" class="cart-link">장바구니<span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="checkout-page">
+            <div class="container">
+                <h2>결제하기</h2>
+                <div class="checkout-container">
+                    <div class="checkout-form-container">
+                        <form id="checkout-form">
+                            <h3>주문자 정보</h3>
+                            <div class="form-group">
+                                <label for="order-name">이름</label>
+                                <input type="text" id="order-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-email">이메일</label>
+                                <input type="email" id="order-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="order-phone">연락처</label>
+                                <input type="tel" id="order-phone" required>
+                            </div>
+
+                            <h3>배송지 정보</h3>
+                            <div class="form-group form-check">
+                                <input type="checkbox" id="same-as-order">
+                                <label for="same-as-order">주문자 정보와 동일</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-name">수령인</label>
+                                <input type="text" id="shipping-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-phone">연락처</label>
+                                <input type="tel" id="shipping-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-address">주소</label>
+                                <input type="text" id="shipping-address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-memo">배송 메모</label>
+                                <textarea id="shipping-memo" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="order-summary-container">
+                        <h3>주문 요약</h3>
+                        <div id="order-summary-items">
+                            <!-- 주문 상품 목록이 여기에 동적으로 추가됩니다. -->
+                        </div>
+                        <div id="order-summary-total">
+                            <!-- 주문 총액이 여기에 동적으로 추가됩니다. -->
+                        </div>
+                        <button type="submit" form="checkout-form" class="btn-primary">결제하기</button>
+                    </div>
+                </div>
+                <div id="checkout-confirmation" style="display: none;">
+                    <h3>주문이 완료되었습니다. 감사합니다.</h3>
+                    <p>주문 내역은 입력하신 이메일로 발송되었습니다. (실제 발송되지 않습니다)</p>
+                    <a href="index.html" class="btn-primary">홈으로 돌아가기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 고운 한복점. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
